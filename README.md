@@ -21,7 +21,7 @@
 | 가좌고등학교 | - | 2018.03 ~ 2021.01 | 졸업 |
 | 단국대학교 | 컴퓨터공학과 | 2021.03 ~ 2027.02 | GPA 4.15 / 4.5 (졸업 예정) |
 
-<img width="1669" height="791" alt="Image" src="https://github.com/user-attachments/assets/9b3954e7-91fb-4da7-acaa-0c662980f74d" />
+<img width="1674" height="829" alt="Image" src="https://github.com/user-attachments/assets/81ebafd1-818b-4339-bd0d-fee16a910bb9" />
 
 ## 🏆 성적 우수 내역
 
