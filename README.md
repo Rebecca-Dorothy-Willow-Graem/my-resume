@@ -62,7 +62,6 @@
 - **핵심 목표:** 기존 SHAP의 계산 복잡도를 줄이면서 동일한 설명 품질 유지
 
 ```mermaid
-```mermaid
 graph TD
     A["Input (Image, Text Caption)"] --> B("1. Image Segmentation <br> (N Superpixels $S_1...S_N$)")
     A --> C("2. Create Baseline <br> (e.g., Blurred Image $x_\varnothing$)")
