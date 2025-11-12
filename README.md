@@ -1,5 +1,6 @@
-# my-resume
+
 # 👨‍💻 김승겸 | Computer Engineering Student @ Dankook University
+> “AI의 설명 가능성과 효율성을 함께 탐구하며, 기술로 문제를 해결하는 개발자를 목표로 합니다.”
 
 ## 📫 연락처
 📧 **Email:** 32210813@dankook.ac.kr  
