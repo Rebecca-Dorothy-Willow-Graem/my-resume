@@ -22,6 +22,15 @@
 | 2024 1학기 | 21 | 4.21 | 성적우수 |
 | 2024 2학기 | 23 | 4.17 | 성적우수 (학과 수석) |
 | 2025 1학기 | 21 | 4.43 | 성적우수 (학과 차석) |
+## 💻 Tech Stack
+
+
+| 분야 | 기술 | 숙련도 |
+|------|------|--------|
+| 언어 | ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python), ![C](https://img.shields.io/badge/C-Programming-informational?logo=c) | ⭐⭐⭐ ☆ ☆ |
+| 프레임워크 | ![PyTorch](https://img.shields.io/badge/PyTorch-1.13-orange?logo=pytorch) | ⭐⭐ ☆  ☆ ☆|
+| 도구 | ![VSCode](https://img.shields.io/badge/Editor-VSCode-0078d7?logo=visual-studio-code), ![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github) | ⭐⭐⭐⭐☆|
+| 협업 | ![Git](https://img.shields.io/badge/Git-Tool-F05032?logo=git), ![Markdown](https://img.shields.io/badge/Markdown-Document-000000?logo=markdown) | ⭐⭐ ☆ ☆ ☆|
 
 ## 🧠 프로젝트 경험
 
