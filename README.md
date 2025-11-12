@@ -1,11 +1,23 @@
 
-# 👨‍💻 김승겸 | Computer Engineering Student @ Dankook University
-> “AI의 설명 가능성과 효율성을 함께 탐구하며, 기술로 문제를 해결하는 개발자를 목표로 합니다.”
+## 👤 프로필
 
-## 📫 연락처
-📧 **Email:** 32210813@dankook.ac.kr  
+<table>
+<tr>
+<td width="150">
+  <img src="https://github.com/user-attachments/assets/50d8f92c-f20d-4eae-a9c2-7869b4f1094c" width="130" style="border-radius:50%; border:2px solid #ddd;">
+</td>
+<td>
+
+**김승겸 | Computer Engineering Student @ Dankook University**  
+📧 **Email:** [32210813@dankook.ac.kr](mailto:32210813@dankook.ac.kr)  
 📞 **Phone:** 010-4037-2783  
-🌐 **GitHub:** [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)
+🌐 **GitHub:** [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)  
+
+> AI의 설명 가능성과 효율성을 함께 탐구하며, 기술로 문제를 해결하는 개발자를 목표로 합니다.
+
+</td>
+</tr>
+</table>
 
 
 ## 🏅 Highlights
