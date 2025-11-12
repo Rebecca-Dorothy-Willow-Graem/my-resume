@@ -63,31 +63,31 @@
 
 ```mermaid
 graph TD
-    A["Input (Image, Text Caption)"] --> B("1. Image Segmentation <br> (N Superpixels $S_1...S_N$)")
-    A --> C("2. Create Baseline <br> (e.g., Blurred Image $x_\varnothing$)")
-    A --> D("3. Prepare CLIP Model <br> $f(image, text) \rightarrow \text{Similarity}$")
+    A["입력 (이미지, 텍스트 캡션)"] --> B("1. 이미지 분할 <br> (N개 슈퍼픽셀 S1...SN)")
+    A --> C("2. 베이스라인 생성 <br> (예: 블러 처리된 이미지 x_baseline)")
+    A --> D("3. CLIP 모델 준비 <br> f(이미지, 텍스트) -> 유사도")
 
-    B --> E{"BO-SHAP Decomposition <br> $\phi_i = \phi_i^{(\le k)} + \Lambda_{k,i}$"}
+    B --> E{"BO-SHAP 분해 <br> phi_i = phi(<=k) + Lambda_k_i"}
 
-    E --> F["Part A: Compute Exact Term (≤k)"]
-    F -- "For all coalitions |S| ≤ k" --> G("Calculate exact contributions $\Delta_i(S)$")
-    G -- "e.g., k=1 (default)" --> H("Compute $\phi_i^{(\le 1)} = f(x_{\{i\}},t) - f(x_\varnothing,t)$ <br> (Requires N+1 exact model calls)")
-    H --> J("<b>Exact Part $\phi_i^{(\le k)}$</b>")
+    E --> F["Part A: 정확한 기여도 계산 (<=k)"]
+    F -- "모든 |S| <= k 조합에 대해" --> G("정확한 기여도 Delta_i(S) 계산")
+    G -- "예: k=1 (기본값)" --> H("phi_i(<=1) 계산 <br> f(x_{i},t) - f(x_baseline,t) <br> (N+1회 모델 호출 필요)")
+    H --> J("정확한 기여도 phi(<=k)")
 
-    E --> K["Part B: Bound Tail Term (>k)"]
-    K -- "For coalitions |S| > k" --> L("Local Randomized Search <br> (Find max $\Delta f$ in 'tail')")
-    L --> M("Calculate Upper Bound $\Lambda_{k,i}$ <br> (Residual Mass $\times$ max $\Delta f$)")
-    M --> N("<b>Tail Bound $\Lambda_{k,i}$</b>")
+    E --> K["Part B: 꼬리 항 상한 추정 (>k)"]
+    K -- "모든 |S| > k 조합에 대해" --> L("로컬 랜덤 탐색 <br> (최대 Delta_f 탐색)")
+    L --> M("상한값 Lambda_k_i 계산 <br> (잔여 가중치 * 최대 Delta_f)")
+    M --> N("꼬리 항 상한값 Lambda_k_i")
 
     C --> G
     D --> G
     C --> L
     D --> L
 
-    J --> O("4. Combine Results <br> $\phi_i^{\text{BO-SHAP}} = \phi_i^{(\le k)} + \phi_i^{(\text{tail})}$")
+    J --> O("4. 결과 결합 <br> phi_BO-SHAP = phi(<=k) + phi(tail)")
     N --> O
 
-    O --> P["Final Attribution Map (Heatmap)"]
+    O --> P["최종 기여도 맵 (히트맵)"]
 ```
 
 #### ⚙️ 기술적 구성
