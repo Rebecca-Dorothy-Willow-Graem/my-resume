@@ -8,7 +8,8 @@
 </td>
 <td>
 
-**김승겸 | Computer Engineering Student @ Dankook University**  
+**김승겸 | Computer Engineering Student **
+**@ Dankook University**  
 📧 **Email:** [32210813@dankook.ac.kr](mailto:32210813@dankook.ac.kr)  
 📞 **Phone:** 010-4037-2783  
 🌐 **GitHub:** [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)  
