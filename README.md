@@ -62,33 +62,33 @@
 - **핵심 목표:** 기존 SHAP의 계산 복잡도를 줄이면서 동일한 설명 품질 유지
 
 ```mermaid
+```mermaid
 graph TD
-    A[Input (Image, Text Caption)] --> B(1. Image Segmentation <br> (N Superpixels $S_1...S_N$))
-    A --> C(2. Create Baseline <br> (e.g., Blurred Image $x_\varnothing$))
-    A --> D(3. Prepare CLIP Model <br> $f(image, text) \rightarrow \text{Similarity}$)
+    A["Input (Image, Text Caption)"] --> B("1. Image Segmentation <br> (N Superpixels $S_1...S_N$)")
+    A --> C("2. Create Baseline <br> (e.g., Blurred Image $x_\varnothing$)")
+    A --> D("3. Prepare CLIP Model <br> $f(image, text) \rightarrow \text{Similarity}$")
 
-    B --> E{BO-SHAP Decomposition <br> $\phi_i = \phi_i^{(\le k)} + \Lambda_{k,i}$}
+    B --> E{"BO-SHAP Decomposition <br> $\phi_i = \phi_i^{(\le k)} + \Lambda_{k,i}$"}
 
-    E --> F[Part A: Compute Exact Term (≤k)]
-    F -- "For all coalitions |S| ≤ k" --> G(Calculate exact contributions $\Delta_i(S)$)
-    G -- "e.g., k=1 (default)" --> H(Compute $\phi_i^{(\le 1)} = f(x_{\{i\}},t) - f(x_\varnothing,t)$ <br> (Requires N+1 exact model calls))
-    H --> J(<b>Exact Part $\phi_i^{(\le k)}$</b>)
+    E --> F["Part A: Compute Exact Term (≤k)"]
+    F -- "For all coalitions |S| ≤ k" --> G("Calculate exact contributions $\Delta_i(S)$")
+    G -- "e.g., k=1 (default)" --> H("Compute $\phi_i^{(\le 1)} = f(x_{\{i\}},t) - f(x_\varnothing,t)$ <br> (Requires N+1 exact model calls)")
+    H --> J("<b>Exact Part $\phi_i^{(\le k)}$</b>")
 
-    E --> K[Part B: Bound Tail Term (>k)]
-    K -- "For coalitions |S| > k" --> L(Local Randomized Search <br> (Find max $\Delta f$ in 'tail')
-    L --> M(Calculate Upper Bound $\Lambda_{k,i}$ <br> (Residual Mass $\times$ max $\Delta f$))
-    M --> N(<b>Tail Bound $\Lambda_{k,i}$</b>)
+    E --> K["Part B: Bound Tail Term (>k)"]
+    K -- "For coalitions |S| > k" --> L("Local Randomized Search <br> (Find max $\Delta f$ in 'tail')")
+    L --> M("Calculate Upper Bound $\Lambda_{k,i}$ <br> (Residual Mass $\times$ max $\Delta f$)")
+    M --> N("<b>Tail Bound $\Lambda_{k,i}$</b>")
 
     C --> G
     D --> G
     C --> L
     D --> L
 
-    J --> O(4. Combine Results <br> $\phi_i^{\text{BO-SHAP}} = \phi_i^{(\le k)} + \phi_i^{(\text{tail})}$)
+    J --> O("4. Combine Results <br> $\phi_i^{\text{BO-SHAP}} = \phi_i^{(\le k)} + \phi_i^{(\text{tail})}$")
     N --> O
 
-    O --> P[Final Attribution Map (Heatmap)]
-
+    O --> P["Final Attribution Map (Heatmap)"]
 ```
 
 #### ⚙️ 기술적 구성
