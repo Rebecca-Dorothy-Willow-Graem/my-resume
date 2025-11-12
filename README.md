@@ -4,7 +4,7 @@
 
 <table style="border:none;">
 <tr>
-<td align="center" width="180">
+<td align="center" width="220">
   <img src="https://github.com/user-attachments/assets/50d8f92c-f20d-4eae-a9c2-7869b4f1094c" width="160" style="border-radius:15px; border:2px solid #444; box-shadow: 0 0 8px rgba(0,0,0,0.5);">
 </td>
 <td align="left" style="padding-left:25px; vertical-align:middle;">
