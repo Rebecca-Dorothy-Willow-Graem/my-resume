@@ -61,6 +61,7 @@
 - **주제:** CLIP 이미지–텍스트 매칭 모델에 대한 효율적 SHAP 구현  
 - **핵심 목표:** 기존 SHAP의 계산 복잡도를 줄이면서 동일한 설명 품질 유지
 
+```mermaid
 flowchart TD
     A[입력 이미지 & 텍스트] --> B[CLIP 모델 f(x,t)]
     B --> C[Superpixel 분할 (Partition-Tree)]
@@ -70,6 +71,7 @@ flowchart TD
     E --> F
     F --> G[Deletion / Insertion 평가]
     G --> H[시각화 및 결과 비교]
+```
 
 #### ⚙️ 기술적 구성
 - **모델:** `openai/clip-vit-base-patch32` (HuggingFace Transformers)  
