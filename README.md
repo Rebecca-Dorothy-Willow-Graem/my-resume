@@ -23,6 +23,39 @@
 | 2024 2학기 | 23 | 4.17 | 성적우수 (학과 수석) |
 | 2025 1학기 | 21 | 4.43 | 성적우수 (학과 차석) |
 
+## 🧠 프로젝트 경험
+
+### 🧩 [BO-SHAP for CLIP: Efficient Image–Text Explanation](https://github.com/Rebecca-Dorothy-Willow-Graem/clip-xai-bo-shap)
+> *Efficient SHAP-based Explainable AI method for CLIP model*
+
+#### 📌 개요
+- **참여 프로그램:** 단국대 학부생 논문 지원 사업  
+- **주제:** CLIP 이미지–텍스트 매칭 모델에 대한 효율적 SHAP 구현  
+- **핵심 목표:** 기존 SHAP의 계산 복잡도를 줄이면서 동일한 설명 품질 유지
+
+#### ⚙️ 기술적 구성
+- **모델:** `openai/clip-vit-base-patch32` (HuggingFace Transformers)  
+- **데이터셋:** Flickr8k (image–caption pairs)  
+- **핵심 모듈:**
+  - `bo-shap.py` : grid superpixels 기반 BO-SHAP: ≤k 정확 계산 + tail 상계(BO-like 탐색)  
+  - `bo_shap_clip_partition_tree.py` : SHAP partition-tree superpixels로 동일 알고리즘 적용  
+  - `compare_shap_vs_bo.py` : 원본 SHAP vs BO-SHAP 품질 비교(Deletion/Insertion 곡선, Spearman, L1, Coverage) & 오버레이 저장
+  - `bo_shap_budget_sweep.py` : 예산 스윕(k, trials)으로 목표 품질에 도달하는 최소 호출 수/시간 탐색
+  - `time_compare_shap_vs_bo.py` : 런타임/모델 호출 수 간단 비교(≤k exact만)
+  - `clip_shap_faithful.py` : CLIP+SHAP 기본 설명 시각화
+  - `collect_results.py` : 여러 실험 결과 집계(CSV)
+
+#### 📊 성능 비교
+
+| 방법 | 시간(초) | 모델 호출 수 | Deletion AUC |
+|------|-----------|--------------|---------------|
+| Standard SHAP | 40–55s | ~800 | 0.20 |
+| **BO-SHAP (제안)** | **2–4s (+tail ≤45s)** | ~80–1100 | **0.20 (동일)** |
+
+#### 🚀 성과
+- **연산 속도 10~20× 가속, 설명 품질(Deletion/Insertion) 동등 수준 유지**
+- **정확 ≤k Shapley + tail 상계(BO-like 탐색)로 모델 호출 수/시간 절감**
+- **공통 슈퍼픽셀(Partition-tree)로 공정 비교 및 커버리지(상계 내 오차) 체크 지원**
 
 ## 🌍 대외 활동
 
