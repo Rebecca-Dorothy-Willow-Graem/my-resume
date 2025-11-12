@@ -3,13 +3,12 @@
 
 <table>
 <tr>
-<td width="150">
+<td width="200">
   <img src="https://github.com/user-attachments/assets/50d8f92c-f20d-4eae-a9c2-7869b4f1094c" width="130" style="border-radius:50%; border:2px solid #ddd;">
 </td>
 <td>
 
-**김승겸 | Computer Engineering Student **
-**@ Dankook University**  
+**김승겸 | Computer Engineering Student** <br>**@ Dankook University**  
 📧 **Email:** [32210813@dankook.ac.kr](mailto:32210813@dankook.ac.kr)  
 📞 **Phone:** 010-4037-2783  
 🌐 **GitHub:** [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)  
