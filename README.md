@@ -1,23 +1,37 @@
 
 ## 👤 프로필
 
-<table>
+<div align="center">
+
+<table style="border:none;">
 <tr>
-<td width="200">
-  <img src="https://github.com/user-attachments/assets/50d8f92c-f20d-4eae-a9c2-7869b4f1094c" width="130" style="border-radius:50%; border:2px solid #ddd;">
+<td align="center" width="180">
+  <img src="https://github.com/user-attachments/assets/50d8f92c-f20d-4eae-a9c2-7869b4f1094c" width="160" style="border-radius:15px; border:2px solid #444; box-shadow: 0 0 8px rgba(0,0,0,0.5);">
 </td>
-<td>
+<td align="left" style="padding-left:25px; vertical-align:middle;">
 
-**김승겸 | Computer Engineering Student** <br>**@ Dankook University**  
-📧 **Email:** [32210813@dankook.ac.kr](mailto:32210813@dankook.ac.kr)  
-📞 **Phone:** 010-4037-2783  
-🌐 **GitHub:** [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)  
+<span style="font-size:1.3em; font-weight:700;">김승겸</span>  
+<span style="font-size:1.05em; color:#999;">Computer Engineering Student</span> <br>
+<span style="font-size:1.05em; font-weight:600; color:#3b82f6;">@ Dankook University</span>  
 
-> AI의 설명 가능성과 효율성을 함께 탐구하며, 기술로 문제를 해결하는 개발자를 목표로 합니다.
+<br>
+
+📧 <b>Email:</b> [32210813@dankook.ac.kr](mailto:32210813@dankook.ac.kr)  
+📞 <b>Phone:</b> 010-4037-2783  
+🌐 <b>GitHub:</b> [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)  
+
+<br>
+
+<blockquote>
+AI의 <b>설명 가능성(Explainability)</b>과 <b>효율성(Efficiency)</b>을 함께 탐구하며,  
+기술로 문제를 해결하는 개발자를 목표로 합니다.
+</blockquote>
 
 </td>
 </tr>
 </table>
+
+</div>
 
 
 ## 🏅 Highlights
