@@ -6,6 +6,13 @@
 📞 **Phone:** 010-4037-2783  
 🌐 **GitHub:** [32210813](https://github.com/Rebecca-Dorothy-Willow-Graem)
 
+
+## 🏅 Highlights
+- 🎓 **단국대학교 컴퓨터공학과 (GPA 4.15 / 4.5)**  
+- 🧠 **BO-SHAP for CLIP 프로젝트** — XAI + Bayesian Optimization 연구  
+- 🏆 **4학기  성적우수**, 학과 수석 및 차석 이력  
+- ☁️ **AI × Cloud 자동화 시스템 구축 목표**
+- 
 ## 🎓 학력
 
 | 학교 | 전공 | 기간 | 비고 |
