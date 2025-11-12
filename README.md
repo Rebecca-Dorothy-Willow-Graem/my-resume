@@ -63,14 +63,15 @@
 
 ```mermaid
 flowchart TD
-    A[입력 이미지 & 텍스트] --> B[CLIP 모델 f(x,t)]
-    B --> C[Superpixel 분할 (Partition-Tree)]
-    C --> D[≤k Shapley 항 (정확 계산)]
-    C --> E[>k Shapley 항 (BO-like 탐색 근사)]
+    A[입력 이미지 및 텍스트] --> B[CLIP 모델 f(x,t)]
+    B --> C[Superpixel 분할: Partition-Tree]
+    C --> D[≤k Shapley 항: 정확 계산]
+    C --> E[>k Shapley 항: BO-like 탐색 근사]
     D --> F[기여도 통합 (Shapley 합성)]
     E --> F
     F --> G[Deletion / Insertion 평가]
     G --> H[시각화 및 결과 비교]
+
 ```
 
 #### ⚙️ 기술적 구성
